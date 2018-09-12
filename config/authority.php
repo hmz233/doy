@@ -30,5 +30,20 @@ return [
             ]
         ],
 
+        'A2' => [
+            'icon' => '&#xe612;',
+            'title' => '成员管理',
+            '_child' => [
+                'A21' => [
+                    'icon' => '&#xe621;',
+                    'title' => '成员列表',
+                    'url' => 'doyUserList',
+                    '_child' => [
+                        'A211' => ['title' => '添加成员', 'url' => 'doyUserAdd'],
+                    ]
+                ]
+            ]
+        ]
+
     ]
 ];

@@ -59,6 +59,15 @@ Route::group(
                                 Route::any('{groupId}/authority', 'AuthorityController@authority')->name('authority');
                             }
                         );
+
+                        //成员管理
+                        Route::group(
+                            ['prefix' => 'doyUser'],
+                            function () {
+                                Route::any('', 'DoyUserController@lists')->name('doyUserList');
+                                Route::any('doyUserAdd', 'DoyUserController@add')->name('doyUserAdd');
+                            }
+                        );
                     }
                 );
 
